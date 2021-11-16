@@ -1,6 +1,12 @@
-# hash-cracker-GoLang
+# HASH-Cracker
+[![ISC License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/pedroalbanese/hash-cracker/blob/master/LICENSE) 
+[![GoDoc](https://godoc.org/github.com/pedroalbanese/hash-cracker?status.png)](http://godoc.org/github.com/pedroalbanese/hash-cracker)
+[![Go Report Card](https://goreportcard.com/badge/github.com/pedroalbanese/hash-cracker)](https://goreportcard.com/report/github.com/pedroalbanese/hash-cracker)
+[![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/pedroalbanese/hash-cracker)](https://golang.org)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/pedroalbanese/hash-cracker)](https://github.com/pedroalbanese/hash-cracker/releases)
+### Simple multithreading bruteforce hash cracker
 
-Simple multithreading brute hash **MD5**, **SHA1**, **SHA256**, **SHA512**, **SHA3-256**, **SHA3-512**, **Blake2b256**, **Blake2b512**, **Blake2s256**, **Grøstl** and **JH**.
+Simple multithreading brute hash **MD5**, **SHA1**, **SHA256**, **SHA512**, **SHA3-256**, **SHA3-512**, **Keccak256**, **Keccak512**, **Blake2b256**, **Blake2b512**, **Blake2s256**, **Grøstl** and **JH**.
 
 ## Setup
 Clone the repository and change the working directory:
