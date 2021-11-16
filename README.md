@@ -6,7 +6,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/pedroalbanese/hash-cracker)](https://github.com/pedroalbanese/hash-cracker/releases)
 ### Simple multithreading bruteforce hash cracker
 
-**MD5**, **RMD160** **SHA1**, **SHA256**, **SHA512**, **SHA3-256**, **SHA3-512**, **Keccak256**, **Keccak512**, **Blake2b256**, **Blake2b512**, **Blake2s256**, **Grøstl** and **JH**.
+**MD5**, **RMD160**, **SHA1**, **SHA256**, **SHA512**, **SHA3-256**, **SHA3-512**, **Keccak256**, **Keccak512**, **Blake2b256**, **Blake2b512**, **Blake2s256**, **Grøstl** and **JH**.
 
 ## Setup
 Clone the repository and change the working directory:
@@ -59,22 +59,6 @@ Crack **sha256** with 512 threads
 Crack **sha1** hashes from file
     
     ./dehash -type sha1 -file ./hashes.txt
-
-## Get elapsed time
-
-Just use **time** command
-
-    $ time ./dehash -hash 2e96e89125f4c1aef797410a4bfdb32c0632ef0c
-    Start cracking hash 2e96e89125f4c1aef797410a4bfdb32c0632ef0c
-    Check mesages with length: 1 | Possible variants: 100
-    Check mesages with length: 2 | Possible variants: 10000
-    Check mesages with length: 3 | Possible variants: 1000000
-    Check mesages with length: 4 | Possible variants: 100000000
-    =========> Message: emit
-
-    real    0m29,028s
-    user    1m47,758s
-    sys 0m1,119s
 
 ## Output examples
 
