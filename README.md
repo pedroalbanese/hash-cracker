@@ -20,7 +20,7 @@ Build and run the program:
     ./dehash -hash aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d -charset abcdefghijklmnopqrstuvwxyz
 
 ## Usage
-    ./dehash -hash hexstring|-file path [-type md5|sha1|sha256|sha512|sha3-256|sha3-512|keccak256|keccak512|blake2b256|blake2b512|blake2s256|groestl|jh] [-max val] [-min val] [-charset chars] [-threads num] 
+    ./dehash -hash hexstring|-file path [-type md5|rdm160|sha1|sha256|sha512|sha3-256|sha3-512|keccak256|keccak512|blake2b256|blake2b512|blake2s256|groestl|jh] [-max val] [-min val] [-charset chars] [-threads num] 
 
     Usage of ./dehash:
     -charset string
