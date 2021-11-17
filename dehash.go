@@ -101,19 +101,22 @@ func NewHASHCracker(algorithm string, hashString string, chars []uint8, minLen u
         hashFunc = func(msg []byte) []byte { 
             res := sha3.NewLegacyKeccak256()
             res.Write(msg) 
-            return res[:]
+            hash := res.Sum(nil)
+            return []byte(hash)
         }
     case "keccak512":
         hashFunc = func(msg []byte) []byte { 
             res := sha3.NewLegacyKeccak512()
             res.Write(msg) 
-            return res[:]
+            hash := res.Sum(nil)
+            return []byte(hash)
         }
     case "rmd160":
         hashFunc = func(msg []byte) []byte { 
             res := ripemd160.New()
             res.Write(msg) 
-            return res[:]
+            hash := res.Sum(nil)
+            return []byte(hash)
         }
     default:
         panic("Wrong hashing algorithm name was passed!")
