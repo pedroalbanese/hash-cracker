@@ -6,7 +6,6 @@ import (
     "flag"
     "bufio"
     "os"
-    "time"
 )
 
 
@@ -24,20 +23,12 @@ func main() {
     flag.Parse()
 
     if *hash != "" {
-        now := time.Now()
-        defer func() {
-            fmt.Println(time.Now().Sub(now))
-        }()
         crackHash(*hashType, *hash, *charSet, *minLen, *maxLen, *threadsNum)
     } else if *filePath != "" {
         file, err := os.Open(*filePath)
         if err != nil {
             fmt.Println("Failed opening file!")
         }
-        now := time.Now()
-        defer func() {
-            fmt.Println(time.Now().Sub(now))
-        }()
         scanner := bufio.NewScanner(file)
         scanner.Split(bufio.ScanLines)
         for scanner.Scan() {
