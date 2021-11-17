@@ -8,8 +8,19 @@
 
 **MD5**, **RMD160**, **SHA1**, **SHA256**, **SHA512**, **SHA3-256**, **SHA3-512**, **Keccak256**, **Keccak512**, **Blake2b256**, **Blake2b512**, **Blake2s256**, **Grøstl** and **JH**.
 
+## Setup
+Clone the repository and change the working directory:
+
+    git clone https://github.com/nikitavoryet/hash-cracker-GoLang
+    cd hash-cracker-GoLang
+Build and run the program:
+
+    go mod init main.go
+    go build -o dehash
+    ./dehash -hash aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d -charset abcdefghijklmnopqrstuvwxyz
+
 ## Usage
-    ./dehash -hash hexstring|-file path [-type md5|sha1|sha256|sha512|sha3-256|sha3-512|blake2b256|blake2b512|blake2s256|groestl|jh] [-max val] [-min val] [-charset chars] [-threads num] 
+    ./dehash -hash hexstring|-file path [-type md5|sha1|sha256|sha512|sha3-256|sha3-512|keccak256|keccak512|blake2b256|blake2b512|blake2s256|groestl|jh] [-max val] [-min val] [-charset chars] [-threads num] 
 
     Usage of ./dehash:
     -charset string
@@ -48,6 +59,22 @@ Crack **sha256** with 512 threads
 Crack **sha1** hashes from file
     
     ./dehash -type sha1 -file ./hashes.txt
+
+## Get elapsed time
+
+Just use **time** command
+
+    $ time ./dehash -hash 2e96e89125f4c1aef797410a4bfdb32c0632ef0c
+    Start cracking hash 2e96e89125f4c1aef797410a4bfdb32c0632ef0c
+    Check mesages with length: 1 | Possible variants: 100
+    Check mesages with length: 2 | Possible variants: 10000
+    Check mesages with length: 3 | Possible variants: 1000000
+    Check mesages with length: 4 | Possible variants: 100000000
+    =========> Message: emit
+
+    real    0m29,028s
+    user    1m47,758s
+    sys 0m1,119s
 
 ## Output examples
 
