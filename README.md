@@ -1,6 +1,7 @@
 # HASH-Cracker ☢
 [![ISC License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/pedroalbanese/hash-cracker/blob/master/LICENSE) 
 [![GoDoc](https://godoc.org/github.com/pedroalbanese/hash-cracker?status.png)](http://godoc.org/github.com/pedroalbanese/hash-cracker)
+[![GitHub downloads](https://img.shields.io/github/downloads/pedroalbanese/hash-cracker/total.svg?logo=github&logoColor=white)](https://github.com/pedroalbanese/hash-cracker/releases)
 [![Go Report Card](https://goreportcard.com/badge/github.com/pedroalbanese/hash-cracker)](https://goreportcard.com/report/github.com/pedroalbanese/hash-cracker)
 [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/pedroalbanese/hash-cracker)](https://golang.org)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/pedroalbanese/hash-cracker)](https://github.com/pedroalbanese/hash-cracker/releases)
